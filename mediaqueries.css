@@ -1,0 +1,15 @@
+@media screen and (max-width: 800px) {
+    #desktopNav {
+        display: none;
+    }
+
+    #hamburgerNav {
+        display: flex;
+    }
+
+    .profilePic {
+        width: 180px; /* Smaller size on smaller screens */
+        height: 180px;
+    }
+
+}

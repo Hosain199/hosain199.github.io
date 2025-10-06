@@ -1,67 +1,267 @@
 /* All */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@300;400;500;600&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
-
   font-family: "Poppins", sans-serif;
+}
+#profile {
+  font-family: 'Doto', sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 p {
-    color: rgb(85, 85, 85)
+  color: rgb(85, 85, 85);
 }
 
-a, .btn {
-    transition: all 0.1s ease;
+a,
+.btn {
+  transition: all 0.3s ease;
 }
 
 /* nav */
-nav, .navLinks {
-    display: flex;;
+nav,
+.navLinks {
+  display: flex;
 }
 
 nav {
-    justify-content: space-between;
-    align-items: center;
-    height: 17vh;
-    padding: 20px 40px;
-    background-color: white;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
-    z-index: 100;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 20px 40px;
+  background-color: rgb(238, 238, 238);
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+  z-index: 100;
 }
 
 .navLinks {
-    gap: 32px;
-    list-style: none;
-    font-weight: 24px;
+  gap: 32px;
+  list-style: none;
+  font-weight: 24px;
 }
 
 a {
-    text-decoration: none;
-    color: black;
-    text-decoration-color: white;
-    
+  text-decoration: none;
+  color: black;
+  text-decoration-color: white;
 }
 
 a:hover {
-    color: gray;
-    text-decoration: underline;
-    text-decoration-color: rgb(181, 181, 181);
-    text-underline-offset: 16px;
+  color: gray;
+  text-decoration: underline;
+  text-decoration-color: rgb(181, 181, 181);
+  text-underline-offset: 16px;
 }
 
 .logo {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .logo:hover {
-    color: rgb(162, 213, 255);
-    cursor: default
+  color: rgb(162, 213, 255);
+  cursor: default;
+}
+
+/* Styling for the typed title */
+
+
+/* hamburgerLinks */
+
+#hamburgerNav {
+  display: none;
+}
+
+.hamburgerMenu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburgerIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 32px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.hamburgerIcon span {
+  width: 100%;
+  height: 3px;
+  background-color:black;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburgerIcon:hover span {
+  background-color: #666;
+}
+
+.menuLinks {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuLinks a {
+    display: block;
+    padding: 12px 16px;
+    text-align: center;
+    font-size: 1.5rem;
+    color:black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuLinks li {
+    list-style: none;
+}
+
+.menuLinks.open {
+    max-height: 300px;
+}
+
+.hamburgerIcon.open span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.hamburgerIcon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburgerIcon.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.hamburgerIcon span:first-child {
+    transform: none;
+}
+
+.hamburgerIcon span:first-child {
+    opacity: 1;
+}
+
+.hamburgerIcon span:first-child {
+    transform: none;
+}
+
+/* Profile Section */
+section #profile {
+    padding: 60px 20px;
+    height: 50vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.profilePicContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+
+}
+
+.profilePic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+
+}
+
+.profilePic:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    opacity: 0.9;
+}
+
+.introText {
+    padding-bottom: 10px;
+    text-align: center;
+    min-height: 200px;
+}
+
+.typeTitle{
+  text-align: center;
+  font-size: 3.5rem; /* Make it large and prominent */
+  margin-top: 10px;
+}
+
+/* Optional: Style the blinking cursor */
+.typed-cursor {
+  opacity: 1;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 15px 24px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    text-decoration: none;
+    color: white;
+    background-color: rgb(85, 85, 85);
+    cursor: pointer;
+}
+
+#socialMedia {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    gap: 16px;
+}
+
+.socialIcon {
+    height: 32px;
+    cursor: pointer;
+    
 }
