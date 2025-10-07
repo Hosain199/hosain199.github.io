@@ -265,3 +265,12 @@ section #profile {
     cursor: pointer;
     
 }
+
+#footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(238, 238, 238);
+    color: rgb(85, 85, 85);
+    margin-top: 40px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+}
