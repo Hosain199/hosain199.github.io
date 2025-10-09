@@ -1,15 +1,50 @@
 @media screen and (max-width: 800px) {
-    #desktopNav {
-        display: none;
-    }
 
-    #hamburgerNav {
-        display: flex;
-    }
+    html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
 
-    .profilePic {
-        width: 180px; /* Smaller size on smaller screens */
-        height: 180px;
-    }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
+    main, section {
+    flex: 1;
+  }
+
+  #desktopNav {
+    display: none;
+  }
+
+  #hamburgerNav {
+    display: flex;
+  }
+
+  .profilePic {
+    width: 180px; /* Smaller size on smaller screens */
+    height: 180px;
+  }
+
+  .typeTitle{
+  text-align: center;
+  font-size: 2.5rem; /* Make it large and prominent */
+  margin-top: 10px;
+}
+
+  #footer {
+    margin: 0;
+    padding: 16px;
+    position: relative;
+    bottom: 0;
+    font-size: smaller;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  
 }
