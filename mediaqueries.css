@@ -36,6 +36,29 @@
   margin-top: 10px;
 }
 
+ .sectionAboutContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutdetailsContainer {
+    align-items: center;
+    text-align: center;
+  }
+
+  .aboutPic {
+    width: 220px; 
+    height: 220px;
+  }
+  .aboutContainer {
+    flex-wrap: wrap;
+  }
+
+  .detailsContainer {
+    flex: 1 1 100%;
+  }
+
+
   #footer {
     margin: 0;
     padding: 16px;

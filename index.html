@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="mediaqueries.css">
 
 </head>
+
 <body>
     <nav id="desktopNav">
         <div class="logo">Hosain Mahmud</div>
@@ -26,59 +28,97 @@
     <nav id="hamburgerNav">
         <div class="logo">Hosain Mahmud</div>
         <div class="hamburgerMenu">
-            <div class ="hamburgerIcon" onclick="toggleMenu()">
+            <div class="hamburgerIcon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
-                <span></span>  
-        </div>
-        <div class="menuLinks" id="menuLinks">
-            <ul>
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </ul>
-        </div>
+                <span></span>
+            </div>
+            <div class="menuLinks" id="menuLinks">
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
     </nav>
 
- <section id="profile">
-    <div class="profilePicContainer">
-        <img src="./assets/profilepic.png" alt="Hosain Mahmud profile picture" class="profilePic">
+    <section id="profile">
+        <div class="profilePicContainer">
+            <img src="./assets/profilepic.png" alt="Hosain Mahmud profile picture" class="profilePic">
 
-    </div>
-    <div class="introText">
-        <h1 class="typeTitle">
-            <span id="typedOutput"></span>
-        </h1>
-    </div>
-    <div class="btnContainer">
-        <button 
-            class="btn btnCv" onclick="window.open('./assets/HosainResume.pdf')">
-            Download CV
-        </button>
-        <button 
-        class="btn btnContact" onclick="location.href='#contact'">
-            Contact Me
-        </button>
-    </div>
-    <div id="socialMedia">
-        <a href="https://www.linkedin.com/in/hosain191/" target="_blank">
-            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="socialIcon">
-        </a>
-        <a href="https://github.com/Hosain199" target="_blank">
-            <img src="./assets/github.png" alt="Github icon" class="socialIcon">
-        </a>
+        </div>
+        <div class="introText">
+            <h1 class="typeTitle">
+                <span id="typedOutput"></span>
+            </h1>
+        </div>
+        <div class="btnContainer">
+            <button class="btn btnCv" onclick="window.open('./assets/HosainResume.pdf')">
+                Download CV
+            </button>
+            <button class="btn btnContact" onclick="location.href='#contact'">
+                Contact Me
+            </button>
+        </div>
+        <div id="socialMedia">
+            <a href="https://www.linkedin.com/in/hosain191/" target="_blank">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="socialIcon">
+            </a>
+            <a href="https://github.com/Hosain199" target="_blank">
+                <img src="./assets/github.png" alt="Github icon" class="socialIcon">
+            </a>
 
 
-    </div>
-</section>
-<footer id="footer">
-    <p>© 2024 Hosain Mahmud. All rights reserved.</p>
+        </div>
+    </section>
+    <section id="about">
+        <p class="sectionTextp1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="sectionAboutContainer">
+            <div class="aboutPicContainer">
+                <img src="./assets/aboutpic.jpg" alt="About me picture" class="aboutPic">
 
-</footer>
+            </div>
+            <div class="aboutdetailsContainer">
+                <div class="aboutContainer">
+                    <div class="detailsContainer">
+                        <img src="./assets/experience.png" alt="experience icon" class="detailsIcon">
+                        <h3 class="detailsTitle">Experience</h3>
+                        <p class="detailsText">1+ Years Working</p>
+                    </div>
+                    <div class="detailsContainer">
+                        <img src="./assets/education.png" alt="education icon" class="detailsIcon">
+                        <h3 class="detailsTitle">Education</h3>
+                        <p class="detailsText">BSc in CSE</p>
+
+
+                    </div>
+
+                </div>
+                <div class="aboutDescription">
+                    <p>Hello! I'm Hosain Mahmud, a passionate web developer with expertise in HTML, CSS, JavaScript,
+                        React, and Node.js. I love creating dynamic and responsive web applications that provide
+                        exceptional user experiences. With a strong foundation in both front-end and back-end
+                        development, I enjoy tackling complex challenges and continuously learning new technologies to
+                        enhance my skills. Let's build something amazing together!</p>
+
+                </div>
+
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class ="arrowIcon"
+        onclick="location.href='./#experience'">
         
-    
+    </section>
+    <footer id="footer">
+        <p>© 2024 Hosain Mahmud. All rights reserved.</p>
+
+    </footer>
+
+
     <script src="index.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </body>
+
 </html>
